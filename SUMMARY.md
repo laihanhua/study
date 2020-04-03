@@ -4,4 +4,4 @@
 * [golang](golang.md)
   * [singleflight](golang/singleflight.md)
 * [vim](vim/vimrc)
-  * [vimrc](vim/vimrc)
+  * [vim配置](vim/vimrc)
