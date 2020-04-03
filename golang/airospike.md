@@ -1,7 +1,4 @@
 # airospike
-## 启动user_profile,gas连接user_profile
-- GetProfile err: user_profile error, errmsg: GetProfile.Error: rpc error: code = Unavailable desc = all SubConns are in TransientFailure, latest connection error: connection error: desc = \"transport: Error while dialing dial tcp: address http://0.0.0.0:10375: too many colons in address\
-	- 主机地址是IP或domain，不是URL，不需要前缀（由于gprc使用http2.0协议，配置文件配置127.0.0.1:10375即可，不用http://）
 
 ## 安装airospike
 - https://codeday.me/bug/20190607/1195654.html （docker安装以及主机连接）
@@ -10,9 +7,6 @@
 1. 创建namespace
 	- 需要修改配置文件(/etc/aerospike/aerospike.conf)，然后重启aerospike
 	- 对于docker来说，增加-e "NAMESPACE=mars_ursprf"
-2. 架构
-	![](popo_2019-09-29  14-57-34.jpg)
-	- 客户端层
 	
 ## 调研golang-airospike连接
 1. Go version v1.9+ is required
@@ -121,5 +115,4 @@ func NewPolicy() *BasePolicy {
 1. 所有的map都平铺开了，例如之前的data字段是个json，而在aerospike则平铺每一个字段。
 2. 如果存储datetime？
 	- aerospkie没有timestamp的数据类型，一些建议是转成integer进行存储
-	- ![](popo_2019-09-29  10-15-14.jpg)
 
