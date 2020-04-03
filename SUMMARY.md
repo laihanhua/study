@@ -12,6 +12,6 @@
   * [定时任务](golang/定时执行任务.md)
 * [vim](vim/vimrc)
   * [vim配置](vim/vimrc)
-* [python]
+* [python](python)
   * [logging模块](python/logging模块.md)
   * [编码问题](python/编码问题.md)
