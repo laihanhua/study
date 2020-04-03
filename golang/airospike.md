@@ -36,8 +36,8 @@
 	- Each get/set call is a non-blocking, asynchronous network call to the Aerospike database cluster. Connections are cached with a connection pool for each server node.（每个get/set调用都是异步的，连接对于每一个节点采用连接池的方式。）
 	- 关闭：When all transactions complete and the application is ready for a clean shutdown, call the Close() method to free resources held by the Client object. The Client object cannot be used after a Close() call.（应用关闭前，需要Close(）释放资源）
 3. 关于断开连接
-	- 1.测试启动了user_profile后，初次访问aerospike成功。
-	- 2.关闭aerospike，测试gm/user_profile接口，访问aerospike失败。
+	- 1.测试启动了myproject后，初次访问aerospike成功。
+	- 2.关闭aerospike，测试myproject接口，访问aerospike失败。
 		
 		```
 		command execution timed out on client: Exceeded number of retries. 
