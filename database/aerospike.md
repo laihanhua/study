@@ -8,7 +8,7 @@
 	- 需要修改配置文件(/etc/aerospike/aerospike.conf)，然后重启aerospike
 	- 对于docker来说，增加-e "NAMESPACE=mars_ursprf"
 2. 架构
-	![](popo_2019-09-29 14-57-34.jpg)
+	![](ae.jpg)
 	- 客户端层
 	
 ## 数据模型
