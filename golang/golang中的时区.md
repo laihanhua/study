@@ -1,6 +1,5 @@
 ## golang中的时区对比
-### 参考
-http://km.netease.com/article/275141
+
 ### 对比结果
 #### 应用和数据库在同一时区
 类型 | 系统时区 | goalng 设置时区 和 goalng输出 | mysql插入和select
