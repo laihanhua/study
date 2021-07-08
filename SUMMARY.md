@@ -13,6 +13,7 @@
   * [unicode编码](golang/unicode编码问题.md)
   * [golang第三方库](golang/lib.md)
   * [govalidator使用初体验](golang/govalidator使用初体验.md)
+  * [压测](压测.md)
 * [vim](vim/vimrc)
   * [vim配置](vim/vimrc)
 * [python](python)
