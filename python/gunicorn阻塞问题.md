@@ -220,7 +220,12 @@ class Timeout(BaseException):
 ### 解决方案
 通过上述的分析结合我们的使用场景，最后决定通过设置大timeout=60，并且更细粒度读写文件，从每次写入50w行降低到10w行，减少单次write阻塞的时间，让worker在timeout时间内可以调度会hub并发心跳给master。
 
+### 额外说明
+1. 程序只有遇到io操作时（比如访问数据库），gevent才会进行调度。换句话说，在高IO密集型的程序下使用gevent模型很好。但是高CPU密集型的程序下没啥好处。
+2. 如果程序真的时高CPU密集型，可以调用主动让出CPU的API之类（gevent.sleep），触发下一次调度。
+
 ### 参考文献
 1. https://developer.aliyun.com/article/683284
 2. https://www.cnblogs.com/xybaby/p/6370799.html
 3. https://www.jianshu.com/p/861f29ac68e8
+4. https://www.huaweicloud.com/articles/12455747.html
