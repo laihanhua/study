@@ -15,6 +15,7 @@
   * [govalidator使用初体验](golang/govalidator使用初体验.md)
   * [压测](golang/压测.md)
   * [dtm](golang/dtm.md)
+  * [rabbitmq](golang/rabbitmq.md)
 * [vim](vim/vimrc)
   * [vim配置](vim/vimrc)
 * [python](python)
