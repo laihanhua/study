@@ -25,4 +25,5 @@
 * [database](database)
   * [aerospike](database/aerospike.md)
 * [git](git.md)
+* [lima](lima.md)
 
