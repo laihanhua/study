@@ -16,6 +16,7 @@
   * [压测](golang/压测.md)
   * [dtm](golang/dtm.md)
   * [rabbitmq](golang/rabbitmq.md)
+  * [channel关闭](golang/channel.md)
 * [vim](vim/vimrc)
   * [vim配置](vim/vimrc)
 * [python](python)
