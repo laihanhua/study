@@ -25,6 +25,8 @@
   * [gunicorn阻塞问题](python/gunicorn阻塞问题.md)
 * [database](database)
   * [aerospike](database/aerospike.md)
+* [算法](算法)
+  * [hello算法](算法/hello算法导航.md)
 * [git](git.md)
 * [lima](lima.md)
 
